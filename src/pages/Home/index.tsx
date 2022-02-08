@@ -58,7 +58,7 @@ const Home = (): JSX.Element => {
         products.map((product) => {
           return (
             <li key={product.id}>
-              <img src={product.image} alt={product.title} onClick={() => console.log(cartItemsAmount)} />
+              <img src={product.image} alt={product.title}/>
               <strong>{product.title}</strong>
               <span>{product.priceFormatted}</span>
               <button
